@@ -18,7 +18,7 @@ const renameFile = async (file) => {
     // console.log(changeNames)
     for (let name in changeNames) {
         if (fs.existsSync(changeNames[name].oldName)){
-            fs.renameSync(path.resolve(path.join(process.cwd(), changeNames[name].oldName)), path.resolve(path.join(process.cwd(), `${changeNames[name].newName}${name}`)))
+            fs.renameSync(path.resolve(path.join(process.cwd(), changeNames[name].oldName)), path.resolve(path.join(process.cwd(), `${changeNames[name].newName}${name}.mp4`)))
         }
     }    
 }
